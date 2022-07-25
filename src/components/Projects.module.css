@@ -1,0 +1,46 @@
+.background{
+    position: relative;
+    left: 4rem;
+    display: flex;
+    gap: 5rem;
+    border-top-left-radius: 20px;
+    margin-top: 1rem;
+    background-color: black;
+    padding: 2rem;
+}
+@media (max-width: 60rem){
+    .background{
+        flex-direction: column;
+    }
+}
+
+.container{
+    width: 40%;
+    display:flex;
+    /* flex-wrap: wrap; */
+    padding: 1rem;
+    border: 1px solid grey;
+    transition: 500ms;
+}
+@media (max-width: 60rem){
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+}
+.container:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.img{
+    margin-top: 3rem;
+    border-radius: 6px;
+    width: 9rem;
+    height: 9rem;
+}
+.info{
+    padding: 3rem;
+    color: grey;
+    /* width: 40%; */
+}

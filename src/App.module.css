@@ -1,0 +1,173 @@
+.App{
+    /* transform: scale(0.67); */
+    display: block;
+    /* padding: 1rem; */
+    padding-top: 15rem;
+    overflow-x:hidden;
+    width: 100%;
+    height:fit-content;
+    background: linear-gradient(150deg, #130f40 0%, #111124 74%);
+    
+}
+.h1{
+    color: grey;
+}
+
+.projects{
+    color:grey;
+    margin-top: 10rem;
+}
+
+.first{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    color: rgb(181, 188, 188);
+    gap: 5rem;
+    padding: 3rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+}
+
+@media (max-width: 60rem){
+    .first{
+        display:block;
+        font-size: 100%;
+    }
+}
+
+
+.bla{
+    margin: 2rem;
+}
+
+.img{
+    position: relative;
+    top: 5rem;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 1px 1px 5px solid black;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacion {
+    0%{top:5rem; box-shadow: 0px -5px 7px blue;}
+    50%{top:3rem; box-shadow: 0px 5px 7px blue;}
+    100%{top:5rem; box-shadow: 0px -5px 7px blue;}
+}
+
+
+@media (max-width: 60rem){
+    .img{
+        width: 10rem;
+        height: 10rem;
+        margin: 5rem;
+    }
+}
+
+.second{
+    right: 2rem;
+    display: flex;
+    background-color:rgb(11, 11, 11);
+    padding: 1rem;
+    border-top-right-radius: 20px;
+    height: 25rem;
+    width: 99%;
+    /* opacity: 0; */
+    transition: 700ms ease-in-out;
+    transform: translateX(-220%);
+}
+.secondVisible{
+    right: 2rem;
+    display: flex;
+    background-color:rgb(11, 11, 11);
+    padding: 1rem;
+    border-top-right-radius: 20px;
+    height: 25rem;
+    width: 99%;
+    transition: 700ms ease-in-out;
+    transform: translateX(-2rem);
+}
+
+.secondbg{
+    position: relative;
+    left:1rem;
+    padding-top: 3rem;
+    border-top-left-radius: 20px;
+    background-color: rgb(43, 43, 43);
+    height:30rem ;
+    /* opacity: 0; */
+    transition: 700ms ease-in-out;
+    transform: translateX(100%);
+}
+.secondbgVisible{
+    position: relative;
+    left:1rem;
+    padding-top: 3rem;
+    border-top-left-radius: 20px;
+    background-color: rgb(43, 43, 43);
+    height:30rem ;
+    transition: 700ms ease-in-out;
+    transform: translateX(0);
+}
+.queseyo{
+    width: 100%;
+    margin-top:2rem
+}
+
+.ref{
+    max-width: 100%;
+}
+
+
+.projectsBgHidden{
+    transform:translateX(200%);
+    transition: 700ms ease-in-out;
+}
+.projectsBgVisible{
+    transform: translateX(0);
+    transition: 700ms ease-in-out;
+}
+
+.projectsBgHidden2{
+    width: 100%;
+    background-color:rgb(43, 43, 43);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    right: 1rem;
+    transform:translateX(-100%);
+    transition: 700ms ease-in-out;
+}
+.projectsBgVisible2{
+    position: relative;
+    right: 2rem;
+    width: 100%;
+    background-color:rgb(43, 43, 43);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top-right-radius: 25px;
+    transform:translateX(0);
+    transition: 700ms ease-in-out;
+}
+.footerRef{
+    margin-top: 2rem;
+    width: 100%;
+    height: 1rem;
+    /* background-color: red; */
+}
+
+.footerVisible{
+    /* position: absolute;
+    bottom: 0px; */
+    /* transform: translateY(0); */
+    transition: 700ms ease-in-out;
+    opacity:1;
+}
+.footerHidden{
+    /* transform: translateY(10rem); */
+    opacity: 0;
+    transition: 700ms ease-in-out;
+}

@@ -1,0 +1,20 @@
+.img{
+    height: 15rem;
+    width: 17rem;
+    border-radius: 3px;
+    transition: 500ms ease;
+}
+.skill{
+    color:rgb(11, 11, 11);
+    font-size: 200%;
+    position:relative;
+    bottom:2.5rem;
+    left:1.5rem
+}
+.js{
+    color:rgb(11, 11, 11);
+    font-size: 200%;
+    position:relative;
+    bottom:15rem;
+    left:1.5rem
+}
