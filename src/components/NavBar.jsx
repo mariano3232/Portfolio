@@ -27,7 +27,7 @@ useEffect(()=>{
           <Nav className="me-auto">
             <Nav.Link href="#home" className={styles.navItem}>Inicio</Nav.Link>
             <Nav.Link href="#Skills" className={styles.navItem}>Skills</Nav.Link>
-            <Nav.Link href="#Projects" className={styles.navItem}>Projectos</Nav.Link>
+            <Nav.Link href="#Projects" className={styles.navItem}>Proyectos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>

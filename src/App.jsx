@@ -86,7 +86,7 @@ function App() {
                 </div>
             </div>
         </div>
-        <h1 ref={Container2} className={styles.projects}>Projectos :</h1>
+        <h1 ref={Container2} className={styles.projects}>Proyectos :</h1>
         <div ref={Container2} className={styles.ref}>
             <div className={isProjectsVisible?styles.projectsBgVisible2:styles.projectsBgHidden2}>
                 <div className={isProjectsVisible?styles.projectsBgVisible:styles.projectsBgHidden}>
