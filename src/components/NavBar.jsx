@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState,useEffect } from 'react';
+import {Link} from 'react-scroll'
 import styles from './navBar.module.css'
 
 function NavBar() {
@@ -25,9 +26,15 @@ useEffect(()=>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.toogle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className={styles.navItem}>Inicio</Nav.Link>
-            <Nav.Link href="#Skills" className={styles.navItem}>Skills</Nav.Link>
-            <Nav.Link href="#Projects" className={styles.navItem}>Proyectos</Nav.Link>
+            <Link activeClass="active" to="#Intro" spy={false} smooth={true} offset={-100} duration={500}>
+              <h3 className={styles.navItem}>Inicio</h3>
+            </Link>
+            <Link activeClass="active" to="#Skills" spy={false} smooth={true} offset={-140} duration={500}>
+              <h3 className={styles.navItem}>Skills</h3>
+            </Link>
+            <Link activeClass="active" to="#Projects" spy={false} smooth={true} offset={-150} duration={500}>
+              <h3 className={styles.navItem}>Proyectos</h3>
+            </Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>

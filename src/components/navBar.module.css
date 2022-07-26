@@ -16,13 +16,12 @@
     transition: 500ms ease;
 }
 .navItem{
-    color:grey !important;
-    font-size: x-large;
-    margin: 1rem;
-    transition: 300ms ease;
+    color: rgb(181, 188, 188);
+    margin:2rem;
 }
 .navItem:hover{
-    color: azure !important;
+    cursor: pointer;
+    pointer-events: fill;
 }
 
 .logo{

@@ -71,7 +71,7 @@ function App() {
   return (
     <div className={styles.App}>   
     <NavBar/>
-        <div className={styles.first}>
+        <div id="#Intro" className={styles.first}>
         <img src={placeholder}alt="??????" className={styles.img}/>
             <div className={styles.text}>
                 <h1 className={styles.bla}>Mariano Melendez</h1>
@@ -79,15 +79,15 @@ function App() {
             </div>
         </div>
         <h1 ref={myContainer} className={styles.h1}>Skills :</h1>
-        <div className={isVisible?styles.secondbgVisible:styles.secondbg}>
+        <div className={isVisible?styles.secondbgVisible:styles.secondbg} id='#Skills'>
             <div className={isVisible?styles.secondVisible:styles.second}>
                 <div className={styles.queseyo}>
-                <Slider/>
+                <Slider className="Skills"/>
                 </div>
             </div>
         </div>
         <h1 ref={Container2} className={styles.projects}>Proyectos :</h1>
-        <div ref={Container2} className={styles.ref}>
+        <div ref={Container2} id="#Projects" className={styles.ref}>
             <div className={isProjectsVisible?styles.projectsBgVisible2:styles.projectsBgHidden2}>
                 <div className={isProjectsVisible?styles.projectsBgVisible:styles.projectsBgHidden}>
                     <Projects/>
