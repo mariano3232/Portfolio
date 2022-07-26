@@ -1,7 +1,22 @@
 .footer{
     display:flex;
+    justify-content: center;
     height: 12rem;
     width: 100%;
     margin-top: 10rem;
     background-color: black
+}
+.icons{
+    display:flex;
+    margin-top: 1rem;
+    flex-direction: row;
+}
+
+.icon{
+    height: 3rem;
+    margin: 2rem;
+    border-radius: 6px;
+}
+.icon:hover{
+    cursor: pointer;
 }
