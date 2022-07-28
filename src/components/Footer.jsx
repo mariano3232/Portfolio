@@ -10,6 +10,7 @@ export default function Footer(){
 
     return(
         <div className={styles.footer}>
+            <h1 className={styles.xd}>Contactame!</h1>
             <div className={styles.icons}>
                 <a href="https://github.com/mariano3232" target='_blank'><img src={github} className={styles.icon} /></a>
                 <a href="https://www.linkedin.com/in/mariano-melendez/" target='_blank'><img src={linkedin} className={styles.icon} /></a>

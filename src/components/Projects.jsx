@@ -9,20 +9,24 @@ export default function Projects(){
     return(
         <div className={styles.background2}>
             <div className={styles.background}>
-                <div className={styles.container}>
+                <a target='_blank' href="https://e-commerce-books.vercel.app/" className={styles.container}>              
                     <img src={growUp} className={styles.img} />
                     <div className={styles.info}>
                         <h3>Grow Up Libros</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam sunt numquam dolor deleniti culpa perspiciatis earum ab veritatis asperiores eveniet. Architecto minima consectetur rerum explicabo non accusantium voluptatum minus earum?</p>
+                        <p>Proyecto final del bootcamp SoyHenry.
+                            Pagina desarrollada junto a un equipo de otros 6 desarrolladores, se trata de un E-commerce de libros enfocados a filosofia y crecimiento personal.</p>
                     </div>
-                </div>
-                <div className={styles.container}>
+                </a>
+                
+                <a target='_blank' href="https://videogames-one.vercel.app/" className={styles.container}>
                 <img src={videogames} className={styles.img} />
                     <div className={styles.info}>
                         <h3>Videogames App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam sunt numquam dolor deleniti culpa perspiciatis earum ab veritatis asperiores eveniet. Architecto minima consectetur rerum explicabo non accusantium voluptatum minus earum?</p>
+                        <p>Proyecto individual.
+                            SPA donde puedes encontrar toda la informacion de tus juegos favoritos e incluso agregar nuevos videojuegos para que se muestren en la pagina
+                        </p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     )

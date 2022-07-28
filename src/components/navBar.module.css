@@ -21,7 +21,6 @@
 }
 .navItem:hover{
     cursor: pointer;
-    pointer-events: fill;
 }
 
 .logo{
@@ -33,4 +32,18 @@
 .toogle{
     background-color: white;
     color: blue !important;
+}
+
+.icons{
+    position: absolute;
+    right: 1rem;
+    display:flex;
+    margin-top: 1rem;
+    flex-direction: row;
+}
+
+.icon{
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 6px;
 }

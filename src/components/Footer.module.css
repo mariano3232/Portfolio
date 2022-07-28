@@ -20,3 +20,8 @@
 .icon:hover{
     cursor: pointer;
 }
+.xd{
+    color: grey;
+    position: absolute;
+    transform:translateY(-4rem);
+}

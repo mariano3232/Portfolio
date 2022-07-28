@@ -3,6 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState,useEffect } from 'react';
 import {Link} from 'react-scroll'
+import github from "../GitHub.png"
+import linkedin from "../linkedin.png"
+import henry from "../Henry.jpg"
 import styles from './navBar.module.css'
 
 function NavBar() {
@@ -35,6 +38,11 @@ useEffect(()=>{
             <Link activeClass="active" to="#Projects" spy={false} smooth={true} offset={-150} duration={500}>
               <h3 className={styles.navItem}>Proyectos</h3>
             </Link>
+            <div className={styles.icons}>
+                <a href="https://github.com/mariano3232" target='_blank'><img src={github} className={styles.icon} /></a>
+                <a href="https://www.linkedin.com/in/mariano-melendez/" target='_blank'><img src={linkedin} className={styles.icon} /></a>
+                <a href="https://www.talent.soyhenry.com/candidate/5476" target='_blank'><img src={henry} className={styles.icon} /></a>
+            </div>    
           </Nav>
         </Navbar.Collapse>
     </Navbar>

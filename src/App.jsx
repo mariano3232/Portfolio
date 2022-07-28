@@ -74,11 +74,13 @@ function App() {
         <div id="#Intro" className={styles.first}>
         <img src={placeholder}alt="??????" className={styles.img}/>
             <div className={styles.text}>
-                <h1 className={styles.bla}>Mariano Melendez</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, in quisquam, architecto tempore alias laboriosam quos iure blanditiis laudantium nesciunt excepturi vel similique magni optio corporis animi, nostrum eum ea.</p>
+                <h2>Mariano Melendez</h2>
+                <h1 className={styles.bla}>FullStack Developer</h1>
+                <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end</p>
+                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificado</a>
             </div>
         </div>
-        <h1 ref={myContainer} className={styles.h1}>Skills :</h1>
+        <h1 ref={myContainer} className={styles.h1}>Mis skills/ tecnologias :</h1>
         <div className={isVisible?styles.secondbgVisible:styles.secondbg} id='#Skills'>
             <div className={isVisible?styles.secondVisible:styles.second}>
                 <div className={styles.queseyo}>
@@ -86,7 +88,7 @@ function App() {
                 </div>
             </div>
         </div>
-        <h1 ref={Container2} className={styles.projects}>Proyectos :</h1>
+        <h1 ref={Container2} className={styles.projects}>Mis proyectos :</h1>
         <div ref={Container2} id="#Projects" className={styles.ref}>
             <div className={isProjectsVisible?styles.projectsBgVisible2:styles.projectsBgHidden2}>
                 <div className={isProjectsVisible?styles.projectsBgVisible:styles.projectsBgHidden}>
