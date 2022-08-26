@@ -171,3 +171,12 @@
     opacity: 0;
     transition: 700ms ease-in-out;
 }
+.contact{
+    font-size: 150%;
+    width: fit-content;
+    padding: 0 1rem;
+    background:linear-gradient(90deg,#0D324D,#7F5A83);
+}
+.contact:hover{
+    cursor: pointer;
+}

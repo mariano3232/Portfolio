@@ -5,6 +5,7 @@ import styles from './App.module.css'
 import NavBar from './components/NavBar.jsx'
 import placeholder from './profile-pic.png'
 import Slider from './components/Carousel.jsx';
+import {Link} from 'react-scroll'
 import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
@@ -74,10 +75,14 @@ function App() {
         <div id="#Intro" className={styles.first}>
         <img src={placeholder}alt="??????" className={styles.img}/>
             <div className={styles.text}>
-                <h2>Mariano Melendez</h2>
+                <h2 className={styles.name}>Mariano Melendez</h2>
                 <h1 className={styles.bla}>FullStack Developer</h1>
                 <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end.</p>
                 <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificado</a>
+                <p>Me encantaria trabajar con vos!</p>
+                <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
+                    <p className={styles.contact}>Contactame</p>
+                </Link>
             </div>
         </div>
         <h1 ref={myContainer} className={styles.h1}>Mis skills/ tecnologias :</h1>
