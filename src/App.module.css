@@ -184,7 +184,11 @@
     /* background:linear-gradient(90deg,#0D324D,#7F5A83); */
     background-color:#0D324D ;
     border-radius: 4px;
+    transition:500ms ease-in-out;
 }
 .contact:hover{
+    /* background-color:#360d4d; */
+    background-color: #234b68;
+    color: rgb(204, 204, 204);
     cursor: pointer;
 }
