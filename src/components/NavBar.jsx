@@ -38,6 +38,9 @@ useEffect(()=>{
             <Link activeClass="active" to="#Projects" spy={false} smooth={true} offset={-150} duration={500}>
               <h3 className={styles.navItem}>Proyectos</h3>
             </Link>
+            <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
+              <h3 className={styles.navItem}>Contacto</h3>
+            </Link>
             <div className={styles.icons}>
                 <a href="https://github.com/mariano3232" target='_blank'><img src={github} className={styles.icon} /></a>
                 <a href="https://www.linkedin.com/in/mariano-melendez/" target='_blank'><img src={linkedin} className={styles.icon} /></a>

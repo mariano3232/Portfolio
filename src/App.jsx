@@ -3,12 +3,12 @@ import { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
 import NavBar from './components/NavBar.jsx'
-import placeholder from './placeHolder.jpg'
+import placeholder from './profile-pic.png'
 import Slider from './components/Carousel.jsx';
 import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
+import { ContactUs } from './components/ContactForm';
 import { useEffect } from 'react';
-
 
 
 function App() {
@@ -76,7 +76,7 @@ function App() {
             <div className={styles.text}>
                 <h2>Mariano Melendez</h2>
                 <h1 className={styles.bla}>FullStack Developer</h1>
-                <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end</p>
+                <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end.</p>
                 <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificado</a>
             </div>
         </div>
@@ -95,6 +95,9 @@ function App() {
                     <Projects/>
                 </div>
             </div>
+        </div>
+        <div id="#ContactForm">
+             <ContactUs/>
         </div>
         <div ref={Container3} className={isFooterVisible?styles.footerVisible:styles.footerHidden}>
            <Footer/>

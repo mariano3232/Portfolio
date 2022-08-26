@@ -14,7 +14,7 @@ function Slider(props){
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3,
+          items: 4,
           slidesToSlide: 1 // optional, default to 1.
         },
         tablet: {
@@ -31,7 +31,7 @@ function Slider(props){
       return(
 <Carousel
   swipeable={false}
-  draggable={false}
+  draggable={true}
   showDots={true}
   responsive={responsive}
   ssr={false} // means to render carousel on server-side.
@@ -40,8 +40,8 @@ function Slider(props){
   autoPlay={true}
   autoPlaySpeed={2000}
   keyBoardControl={true}
-  customTransition="transform 1000ms ease-in-out"
-  transitionDuration={1000}
+  customTransition="transform 700ms ease-in-out"
+  transitionDuration={700}
   containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile"]}
   deviceType={props.deviceType}
