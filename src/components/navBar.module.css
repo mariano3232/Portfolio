@@ -31,7 +31,12 @@
 }
 .toogle{
     background-color: white;
-    color: blue !important;
+    /* color: blue !important; */
+}
+.collapse{
+    margin: 0;
+    background-color: rgba(11, 11, 11, 0.802);
+    transition: 500ms;
 }
 
 .icons{

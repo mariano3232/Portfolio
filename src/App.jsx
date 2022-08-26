@@ -75,8 +75,8 @@ function App() {
         <div id="#Intro" className={styles.first}>
         <img src={placeholder}alt="??????" className={styles.img}/>
             <div className={styles.text}>
-                <h2 className={styles.name}>Mariano Melendez</h2>
-                <h1 className={styles.bla}>FullStack Developer</h1>
+                {/* <h2 className={styles.name}>Mariano Melendez</h2> */}
+                <h1 className={styles.bla}>Mariano Melendez</h1>
                 <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end.</p>
                 <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificado</a>
                 <p>Me encantaria trabajar con vos!</p>
