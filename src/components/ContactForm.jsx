@@ -36,6 +36,7 @@ export const ContactUs = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.form}>
       <h1 className={styles.h1}>Enviame un mail:</h1>
+      <a href="mailto:marianomelend@gmail.com" className={styles.mail}>marianomelend@gmail.com</a>
       <div className={styles.inputContainer}>
         <label className={styles.label}>Nombre</label>
         <input type="text" name="user_name" className={styles.input} />
