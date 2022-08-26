@@ -10,7 +10,7 @@ import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
 import { useEffect } from 'react';
-
+import cv from './CV.pdf'
 
 function App() {
 
@@ -80,9 +80,12 @@ function App() {
                 <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end.</p>
                 <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificado</a>
                 <p>Me encantaria trabajar con vos!</p>
-                <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
-                    <p className={styles.contact}>Contactame</p>
-                </Link>
+                <div className={styles.buttons}>
+                    <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
+                        <p className={styles.contact}>Contactame</p>
+                    </Link>
+                    <a href={cv} download className={styles.contact}>Descargar CV</a>
+                </div>
             </div>
         </div>
         <h1 ref={myContainer} className={styles.h1}>Mis skills/ tecnologias :</h1>
