@@ -10,7 +10,7 @@ import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
 import { useEffect } from 'react';
-import cv from './CV.pdf'
+import cv from './CV INGLES.pdf'
 
 function App() {
 
@@ -78,18 +78,17 @@ function App() {
             <div className={styles.text}>
                 {/* <h2 className={styles.name}>Mariano Melendez</h2> */}
                 <h1 className={styles.bla}>Mariano Melendez</h1>
-                <p>Hola!, soy un desarrollador web fullStack con inclinacion hacia el front-end.</p>
-                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificado</a>
-                <p>Me encantaria trabajar con vos!</p>
+                <p>I am a self-taught developer with a passion for engineering and problem-solving. I have knowledge in several modern technologies and am looking for an entry-level position as a full stack developer.</p>
+                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificate</a>
                 <div className={styles.buttons}>
                     <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
-                        <p className={styles.contact}>Contactame</p>
+                        <p className={styles.contact}>Get in touch ↓</p>
                     </Link>
-                    <a href={cv} download className={styles.contact}>Descargar CV</a>
+                    <a href={cv} download className={styles.contact}>download Resume</a>
                 </div>
             </div>
         </div>
-        <h1 ref={myContainer} className={styles.h1}>Mis skills/ tecnologias :</h1>
+        <h1 ref={myContainer} className={styles.h1}>My skills :</h1>
         <div className={isVisible?styles.secondbgVisible:styles.secondbg} id='#Skills'>
             <div className={isVisible?styles.secondVisible:styles.second}>
                 <div className={styles.queseyo}>
@@ -97,7 +96,7 @@ function App() {
                 </div>
             </div>
         </div>
-        <h1 ref={Container2} className={styles.projects}>Mis proyectos :</h1>
+        <h1 ref={Container2} className={styles.projects}>My projects :</h1>
         <div ref={Container2} id="#Projects" className={styles.ref}>
             <div className={isProjectsVisible?styles.projectsBgVisible2:styles.projectsBgHidden2}>
                 <div className={isProjectsVisible?styles.projectsBgVisible:styles.projectsBgHidden}>

@@ -30,16 +30,16 @@ useEffect(()=>{
         <Navbar.Collapse id="basic-navbar-nav" className={styles.collapse}>
           <Nav className="me-auto">
             <Link activeClass="active" to="#Intro" spy={false} smooth={true} offset={0} duration={500}>
-              <h3 className={styles.navItem}>Inicio</h3>
+              <h3 className={styles.navItem}>Home</h3>
             </Link>
             <Link activeClass="active" to="#Skills" spy={false} smooth={true} offset={-140} duration={500}>
               <h3 className={styles.navItem}>Skills</h3>
             </Link>
             <Link activeClass="active" to="#Projects" spy={false} smooth={true} offset={-150} duration={500}>
-              <h3 className={styles.navItem}>Proyectos</h3>
+              <h3 className={styles.navItem}>Projects</h3>
             </Link>
             <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
-              <h3 className={styles.navItem}>Contacto</h3>
+              <h3 className={styles.navItem}>Contact</h3>
             </Link>
           </Nav>
         </Navbar.Collapse>

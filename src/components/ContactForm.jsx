@@ -7,9 +7,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const ContactUs = () => {
   const form = useRef();
-  const notify = () => toast("Mail enviado, gracias por contactarte!");
+  const notify = () => toast("Mail sent!");
   function handleSubmit(){
-    toast.success('📧 Mail enviado!', {
+    toast.success('📧 Mail sent!!', {
       position:"bottom-right",
       autoClose: 2000,
       hideProgressBar: false,
@@ -35,26 +35,26 @@ export const ContactUs = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.form}>
-      <h1 className={styles.h1}>Enviame un mail:</h1>
+      <h1 className={styles.h1}>Send me an E-mail :</h1>
       <a href="mailto:marianomelend@gmail.com" className={styles.mail}>marianomelend@gmail.com</a>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Nombre</label>
+        <label className={styles.label}>Name</label>
         <input type="text" name="user_name" className={styles.input} />
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Email</label>
+        <label className={styles.label}>E-mail</label>
         <input type="email" name="user_email" className={styles.input} />
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Asunto</label>
+        <label className={styles.label}>Subject</label>
         <input type="text" name="subject" className={styles.input}/>
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Mensaje</label>
+        <label className={styles.label}>Message</label>
         <textarea name="message"  className={styles.text}/>
       </div>
       <div className={styles.inputContainer}>
-       <input type="submit" value="Enviar" onClick={()=>{handleSubmit()}} className={styles.submit}/>
+       <input type="submit" value="Send" onClick={()=>{handleSubmit()}} className={styles.submit}/>
       </div>
       <ToastContainer
         position="bottom-right"
