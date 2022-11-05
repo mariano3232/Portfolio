@@ -1,6 +1,7 @@
 .img{
-    height: 14rem;
-    width: 16rem;
+    height: 12rem;
+    width: 13rem;
+    padding: 0;
     border-radius: 3px;
     transition: 500ms ease;
 }
@@ -8,13 +9,14 @@
     color:rgb(11, 11, 11);
     font-size: 200%;
     position:relative;
-    bottom:2.5rem;
-    left:1.5rem
+    bottom:-1rem;
+    left:1.5rem;
+    color: rgb(197, 197, 197);
 }
 .js{
-    color:rgb(11, 11, 11);
     font-size: 200%;
     position:relative;
-    bottom:15rem;
-    left:1.5rem
+    bottom:11rem;
+    left:1.5rem;
+    color: grey;
 }

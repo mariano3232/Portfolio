@@ -2,37 +2,90 @@
     position: relative;
     left: 4rem;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
     border-top-left-radius: 20px;
     margin-top: 1rem;
     background-color: black;
     padding: 2rem;
 }
-@media (max-width: 60rem){
+
+.default{
+    width: 20%;
+    height: 25rem;
+    display:flex;
+    flex-direction: row;
+    font-size: smaller;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    border: 1px solid grey;
+    transition: 500ms ease-in-out;
+}
+.default p {
+    opacity: 0;
+    position: absolute;
+    transition: ease;
+}
+.default a {
+    opacity: 0;
+    position: absolute;
+}
+.default:hover{
+    width: 50%;
+}
+.default:hover p {
+    opacity: 1;
+    position: relative;
+    transition: 800ms ease-in-out;
+}
+.default:hover a {
+    opacity: 1;
+    position: relative;
+    transition: 800ms ease-in-out;
+}
+
+@media (max-width: 970px){
     .background{
         flex-direction: column;
     }
+    .default{
+        width: 50%;
+        min-width: 23rem;
+        transition: 500ms ease;
+        height: fit-content;
+    }
+    .default p {
+        opacity: 1;
+        position: relative;
+        transition: none;
+    }
+    .default a {
+        opacity: 1;
+        position: relative;
+        transition: none;
+    }
+    .default:hover{
+        transform: scale(1.03);
+    }
+    .default:hover p {
+        opacity: 1;
+        position: relative;
+        transition: 800ms ease-in-out;
+    }
+    .default:hover a {
+        opacity: 1;
+        position: relative;
+    }
 }
 
-.container{
-    width: 25%;
-    display:flex;
-    font-size: smaller;
-    flex-wrap: wrap;
-    padding: 1rem;
-    border: 1px solid grey;
-    transition: 500ms;
-}
-@media (max-width: 60rem){
+
+
+/* @media (max-width: 60rem){
     .container{
         flex-direction: column;
         width: 90%;
     }
-}
-.container:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-}
+} */
 
 .img{
     margin-top: 3rem;
@@ -41,7 +94,13 @@
     width: 9rem;
     height: 9rem;
 }
+.title{
+    flex-wrap: nowrap;
+}
 .info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     padding: 3rem;
     color: grey;
     /* width: 40%; */

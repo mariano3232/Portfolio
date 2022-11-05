@@ -9,6 +9,8 @@ import jsIcon from "../Images/jsIcon.png"
 import nodeIcon from "../Images/nodeIcon.png"
 import reactIcon from "../Images/reactIcon.jpg"
 import reduxIcon from "../Images/reduxIcon.jpg"
+import nextIcon from "../Images/nextIcon.png"
+import firebaseIcon from "../Images/firebaseIcon.png"
 
 function Slider(props){
     const responsive = {
@@ -32,16 +34,16 @@ function Slider(props){
 <Carousel
   swipeable={false}
   draggable={true}
-  showDots={true}
+  showDots={false}
   responsive={responsive}
   ssr={false} // means to render carousel on server-side.
   infinite={true}
 //   autoPlay={props.deviceType !== "mobile" ? true : false}
   autoPlay={true}
-  autoPlaySpeed={2000}
+  autoPlaySpeed={2500}
   keyBoardControl={true}
-  customTransition="transform 700ms ease-in-out"
-  transitionDuration={700}
+  customTransition="transform 400ms ease-in-out"
+  transitionDuration={400}
   containerClass="carousel-container"
   removeArrowOnDeviceType={["tablet", "mobile"]}
   deviceType={props.deviceType}
@@ -50,10 +52,12 @@ function Slider(props){
 >
         <div><img src={htmlIcon} className={styles.img} /> <p className={styles.skill}>HTML</p></div>
         <div><img src={cssIcon} className={styles.img} /> <p className={styles.skill}>CSS</p></div>
-        <div><img src={jsIcon} className={styles.img} /> <p className={styles.js}>JavaScript</p></div>
+        <div><img src={jsIcon} className={styles.img} /> <p className={styles.skill}>JavaScript</p></div>
         <div><img src={nodeIcon} className={styles.img} /> <p className={styles.skill}>Node.Js</p></div>
         <div><img src={reactIcon} className={styles.img} /> <p className={styles.skill}>React</p></div>
         <div><img src={reduxIcon} className={styles.img} /> <p className={styles.skill}>Redux</p></div>
+        <div><img src={nextIcon} className={styles.img}  /> <p className={styles.skill}>NextJs</p></div>
+        <div><img src={firebaseIcon} className={styles.img}  /> <p className={styles.skill}>Firebase</p></div>
 </Carousel>
     )
 }

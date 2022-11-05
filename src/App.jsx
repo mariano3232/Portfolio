@@ -10,7 +10,7 @@ import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
 import { useEffect } from 'react';
-import cv from './CV INGLES.pdf'
+import cv from './Resume.pdf'
 
 function App() {
 
