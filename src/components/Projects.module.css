@@ -91,7 +91,7 @@
     margin-top: 3rem;
     margin: auto;
     border-radius: 6px;
-    width: 9rem;
+    max-width: 12rem;
     height: 9rem;
 }
 .title{

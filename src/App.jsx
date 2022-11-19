@@ -78,8 +78,8 @@ function App() {
             <div className={styles.text}>
                 {/* <h2 className={styles.name}>Mariano Melendez</h2> */}
                 <h1 className={styles.bla}>Mariano Melendez</h1>
-                <p>I am a self-taught developer with a passion for engineering and problem-solving. I have knowledge in several modern technologies and am looking for an entry-level position as a full stack developer.</p>
-                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Certificate</a>
+                <p>I am a self-taught developer with a passion for engineering and problem-solving. I have knowledge in several modern technologies and am looking for a position as a full stack, front-end or back-end developer.</p>
+                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Full Stack certificate</a>
                 <div className={styles.buttons}>
                     <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
                         <p className={styles.contact}>Get in touch ↓</p>

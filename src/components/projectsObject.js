@@ -2,18 +2,17 @@ import growUp from '../grow-up.png'
 import videogames from '../videogames.jpg'
 import tateti from '../tateti.png'
 import twclone from '../twclonelogo.png'
-
+import newsHome from '../newsHomepage.jpg'
 export default function getProjects(){
 
     let obj=[
         {
-            title:'twClone',
-            image:twclone,
-            link:"https://twclone-theta.vercel.app/",
-            description:`Individual project.
-                            Single Page Application similar to Twitter, including authentication and the ability to create and delete
-                            tweets.\n
-                            Technologies and tools used: ReactJs, NextJs, Firebase, Firestore.`
+            title:'News Homepage',
+            image:newsHome,
+            link:"https://news-homepage-liard-chi.vercel.app/",
+            description:`Challenge from code-mentor.\n
+                           Nice looking, responsive homepage for a news site.\n
+                           Made with Js, html & CSS`
         },
         {
             title:'Grow Up Libros',
