@@ -17,7 +17,7 @@ export default function getProjects(){
             title:'News Homepage',
             image:newsHome,
             link:"https://news-homepage-liard-chi.vercel.app/",
-            description:`Challenge from code-mentor.\n
+            description:`Challenge from Frontend Mentor.\n
                            Nice looking, responsive homepage for a news site.\n
                            Made with Js, html & CSS`
         },

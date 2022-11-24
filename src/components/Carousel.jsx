@@ -32,7 +32,7 @@ function Slider(props){
       };
       return(
 <Carousel
-  swipeable={false}
+  swipeable={props.deviceType === "mobile" ? true : false}
   draggable={true}
   showDots={false}
   responsive={responsive}
