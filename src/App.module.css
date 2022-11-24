@@ -20,7 +20,7 @@
 
 .first{
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 100%;
     color: rgb(181, 188, 188);
     gap: 5rem;
@@ -28,14 +28,18 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 200%;
 }
-
+.text{
+    width: 70%;
+}
 @media (max-width: 60rem){
     .first{
         display:block;
         font-size: 100%;
     }
+    .text{
+        width: 100%;
+    }
 }
-
 
 .bla{
     margin: 2rem;

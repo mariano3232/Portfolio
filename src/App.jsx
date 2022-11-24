@@ -74,7 +74,7 @@ function App() {
     <div className={styles.App}>   
     <NavBar/>
         <div id="#Intro" className={styles.first}>
-        <img src={placeholder}alt="??????" className={styles.img}/>
+        {/* <img src={placeholder}alt="??????" className={styles.img}/> */}
             <div className={styles.text}>
                 {/* <h2 className={styles.name}>Mariano Melendez</h2> */}
                 <h1 className={styles.bla}>Mariano Melendez</h1>
