@@ -1,11 +1,18 @@
 import growUp from '../grow-up.png'
 import videogames from '../videogames.jpg'
 import tateti from '../tateti.png'
+import countries from '../countries.jpg'
 import twclone from '../twclonelogo.png'
 import newsHome from '../newsHomepage.jpg'
 export default function getProjects(){
 
     let obj=[
+        {
+            title:'Where in the world',
+            link:"https://where-in-the-world-lyart.vercel.app/",
+            image:countries,
+            description:"Responsive single sage aplication consuming the REST Countries API, made with React "
+        },
         {
             title:'News Homepage',
             image:newsHome,
@@ -20,12 +27,12 @@ export default function getProjects(){
             link:"https://e-commerce-books.vercel.app/",
             description:`Bootcamp's final project. \n At GrowUpLibros we believe that reading can be a powerful tool to achieve personal growth. That's why we are creating an online book store selling philosophy and personal development books, where you'll find the kind of wisdom and encouragement that can help you grow up.`
         },
-        {
-            title:'Videogames App',
-            link:"https://videogames-one.vercel.app/",
-            image:videogames,
-            description:"Individual project.This  project is an SPA that consumes an API to help you find information about your favorite games and even add new games so they're shown on the page."
-        },
+        // {
+        //     title:'Videogames App',
+        //     link:"https://videogames-one.vercel.app/",
+        //     image:videogames,
+        //     description:"Individual project.This  project is an SPA that consumes an API to help you find information about your favorite games and even add new games so they're shown on the page."
+        // },
         {
             title:'TicTacToe',
             link:"https://tateti-rho.vercel.app/",
