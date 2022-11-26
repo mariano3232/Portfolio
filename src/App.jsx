@@ -76,15 +76,14 @@ function App() {
         <div id="#Intro" className={styles.first}>
         {/* <img src={placeholder}alt="??????" className={styles.img}/> */}
             <div className={styles.text}>
-                {/* <h2 className={styles.name}>Mariano Melendez</h2> */}
                 <h1 className={styles.bla}>Mariano Melendez</h1>
                 <p>I am a self-taught developer with a passion for engineering and problem-solving. I have knowledge in several modern technologies and am looking for a position as a full stack, front-end or back-end developer.</p>
-                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-     8a8d-fc1db4a46a4d">Full Stack certificate</a>
+                <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Full Stack certificate</a>
                 <div className={styles.buttons}>
                     <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
                         <p className={styles.contact}>Get in touch ↓</p>
                     </Link>
-                    <a href={cv} download className={styles.contact}>download Resume</a>
+                    <a href={cv} download className={styles.contact}>Resume.pdf</a>
                 </div>
             </div>
         </div>
@@ -105,7 +104,7 @@ function App() {
             </div>
         </div>
         <div id="#ContactForm">
-             <ContactUs/>
+            <ContactUs/>
         </div>
         <div ref={Container3} className={isFooterVisible?styles.footerVisible:styles.footerHidden}>
            <Footer/>
