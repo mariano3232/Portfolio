@@ -87,7 +87,7 @@ function App() {
                 </div>
             </div>
         </div>
-        <h1 ref={myContainer} className={styles.h1}>My skills :</h1>
+        <h1 ref={myContainer} className={styles.h1}>Skills :</h1>
         <div className={isVisible?styles.secondbgVisible:styles.secondbg} id='#Skills'>
             <div className={isVisible?styles.secondVisible:styles.second}>
                 <div className={styles.queseyo}>
@@ -95,7 +95,7 @@ function App() {
                 </div>
             </div>
         </div>
-        <h1 ref={Container2} className={styles.projects}>My projects :</h1>
+        <h1 ref={Container2} className={styles.projects}>Projects :</h1>
         <div ref={Container2} id="#Projects" className={styles.ref}>
             <div className={isProjectsVisible?styles.projectsBgVisible2:styles.projectsBgHidden2}>
                 <div className={isProjectsVisible?styles.projectsBgVisible:styles.projectsBgHidden}>
