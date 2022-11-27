@@ -7,7 +7,6 @@
     width: 100%;
     height:fit-content;
     background: linear-gradient(150deg, #130f40 0%, #111124 74%);
-    
 }
 .circle{
     position: absolute;
@@ -17,6 +16,13 @@
     z-index: 0;
     border-radius: 100%;
     background-color: #0D324D;
+}
+@media(min-width:1600px){
+    .circle{
+        width: 120rem;
+        height:100rem;
+        right: -60rem;
+    }
 }
 .h1{
     color: grey;

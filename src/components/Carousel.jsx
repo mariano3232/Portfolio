@@ -32,8 +32,8 @@ function Slider(props){
       };
       return(
 <Carousel
-  swipeable={props.deviceType === "mobile" ? true : false}
-  draggable={true}
+  swipeable={false}
+  draggable={false}
   showDots={false}
   responsive={responsive}
   ssr={false} // means to render carousel on server-side.
@@ -45,7 +45,6 @@ function Slider(props){
   customTransition="transform 400ms ease-in-out"
   transitionDuration={400}
   containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
   deviceType={props.deviceType}
   dotListClass="custom-dot-list-style"
   itemClass="carousel-item-padding-5-px"

@@ -70,7 +70,7 @@ function App() {
   return (
     <div className={styles.App}>   
     <NavBar/>
-    <div className={styles.circle}><p>p</p></div>
+    <div className={styles.circle}></div>
         <div id="#Intro" className={styles.first}>
             <div className={styles.text}>
                 <h2>Mariano Melendez</h2>
