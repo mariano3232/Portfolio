@@ -28,7 +28,10 @@ export default function Projects(){
                             <div className={styles.info}>
                                 <h5 className={styles.title}>{e.title}</h5>
                                 <p>{e.description}</p>
-                                <a href={e.link} target='blank'><h3>Visit</h3></a>
+                                <div className={styles.flex}>
+                                    <a href={e.link} target='blank'><h3>Visit</h3></a>
+                                    <a href={e.repo} target='blank'><h3>Code</h3></a>
+                                </div>
                             </div>
                         </a>
                         )

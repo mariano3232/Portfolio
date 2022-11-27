@@ -73,7 +73,8 @@ function App() {
         <div id="#Intro" className={styles.first}>
         {/* <img src={placeholder}alt="??????" className={styles.img}/> */}
             <div className={styles.text}>
-                <h1 className={styles.bla}>Mariano Melendez</h1>
+                <h2>Mariano Melendez</h2>
+                <h1 className={styles.bla}>Full Stack Developer</h1>
                 <p>I am a self-taught developer with a passion for engineering and problem-solving. I have knowledge in several modern technologies and am looking for a position as a full stack, front-end or back-end developer.</p>
                 <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Full Stack certificate</a>
                 <div className={styles.buttons}>
@@ -88,7 +89,7 @@ function App() {
         <div className={isVisible?styles.secondbgVisible:styles.secondbg} id='#Skills'>
             <div className={isVisible?styles.secondVisible:styles.second}>
                 <div className={styles.queseyo}>
-                <Slider className="Skills"/>
+                    <Slider className="Skills"/>
                 </div>
             </div>
         </div>

@@ -105,3 +105,7 @@
     color: grey;
     /* width: 40%; */
 }
+.flex{
+    display: flex;
+    gap: 60px;
+}
