@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import { useRef } from 'react';
+import { useState,useRef,useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
 import NavBar from './components/NavBar.jsx'
-import placeholder from './profile-pic.png'
 import Slider from './components/Carousel.jsx';
 import {Link} from 'react-scroll'
 import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
-import { useEffect } from 'react';
 import cv from './Resume.pdf'
 
 function App() {
@@ -28,7 +25,7 @@ function App() {
         if (entry.isIntersecting){
             setIsVisible(true)
         }
-        else setIsVisible(false)
+        // else setIsVisible(false)
     }
 
     const loadProjects=(entries,observer)=>{
@@ -36,14 +33,14 @@ function App() {
         if (entry.isIntersecting){
             setIsProjectsVisible(true)
         }
-        else setIsProjectsVisible(false)
+        // else setIsProjectsVisible(false)
     }
     const loadFooter=(entries,observer)=>{
         let entry=entries[0];
         if (entry.isIntersecting){
             setIsFooterVisible(true)
         }
-        else setIsFooterVisible(false)
+        // else setIsFooterVisible(false)
     }
 
     useEffect(()=>{

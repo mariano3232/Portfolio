@@ -16,17 +16,17 @@ function Slider(props){
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 4,
+          items: 6,
           slidesToSlide: 1 // optional, default to 1.
         },
         tablet: {
           breakpoint: { max: 1024, min: 700 },
-          items: 2,
+          items: 4,
           slidesToSlide: 1 // optional, default to 1.
         },
         mobile: {
           breakpoint: { max: 700, min: 0 },
-          items: 1,
+          items: 3,
           slidesToSlide: 1 // optional, default to 1.
         }
       };
@@ -48,7 +48,7 @@ function Slider(props){
   removeArrowOnDeviceType={["tablet", "mobile"]}
   deviceType={props.deviceType}
   dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-20-px"
+  itemClass="carousel-item-padding-5-px"
 >
         <div><img src={htmlIcon} className={styles.img} /> <p className={styles.skill}>HTML</p></div>
         <div><img src={cssIcon} className={styles.img} /> <p className={styles.skill}>CSS</p></div>

@@ -2,8 +2,9 @@
 .form{
     display: flex;
     flex-direction: column;
-    background-color: #130f40;
-    background:linear-gradient(#130f40,#0b0827);
+    /* background-color: #130f40;
+    background:linear-gradient(#130f40,#0b0827); */
+    background-color:rgb(16, 16, 16);
     width: 80%;
     min-width: 390px;
     border-radius: 10px;

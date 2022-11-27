@@ -1,13 +1,13 @@
 .img{
-    height: 12rem;
-    width: 13rem;
+    height: 9rem;
+    width: 10rem;
     padding: 0;
     border-radius: 3px;
     transition: 500ms ease;
 }
 .skill{
     color:rgb(11, 11, 11);
-    font-size: 200%;
+    font-size: 120%;
     position:relative;
     bottom:-1rem;
     left:1.5rem;

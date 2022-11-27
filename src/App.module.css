@@ -78,7 +78,7 @@
     background-color:rgb(11, 11, 11);
     padding: 1rem;
     border-top-right-radius: 20px;
-    height: 25rem;
+    height: 20rem;
     width: 99%;
     /* opacity: 0; */
     transition: 700ms ease-in-out;
@@ -90,7 +90,7 @@
     background-color:rgb(11, 11, 11);
     padding: 1rem;
     border-top-right-radius: 20px;
-    height: 25rem;
+    height: 20rem;
     width: 99%;
     transition: 700ms ease-in-out;
     transform: translateX(-2rem);
@@ -102,7 +102,7 @@
     padding-top: 3rem;
     border-top-left-radius: 20px;
     background-color: rgb(43, 43, 43);
-    height:30rem ;
+    height:25rem ;
     /* opacity: 0; */
     transition: 700ms ease-in-out;
     transform: translateX(100%);
@@ -113,7 +113,7 @@
     padding-top: 3rem;
     border-top-left-radius: 20px;
     background-color: rgb(43, 43, 43);
-    height:30rem ;
+    height:25rem ;
     transition: 700ms ease-in-out;
     transform: translateX(0);
 }
