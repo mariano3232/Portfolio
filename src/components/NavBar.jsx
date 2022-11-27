@@ -29,7 +29,7 @@ useEffect(()=>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.toogle} />
         <Navbar.Collapse id="basic-navbar-nav" className={styles.collapse}>
           <Nav className="me-auto">
-            <Link activeClass="active" to="#Intro" spy={false} smooth={true} offset={0} duration={500}>
+            <Link activeClass="active" to="#Intro" spy={false} smooth={true} offset={-60} duration={500}>
               <h3 className={styles.navItem}>Home</h3>
             </Link>
             <Link activeClass="active" to="#Skills" spy={false} smooth={true} offset={-140} duration={500}>

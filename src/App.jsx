@@ -59,7 +59,7 @@ function App() {
             rootMargin:'0px 0px 0px 0px',
             threshold:0.8,
         })
-        window.scrollTo(0,200)
+        window.scrollTo(0,175)
         if (myContainer.current){observer.observe(myContainer.current)}
         if (Container2.current){observer2.observe(Container2.current)}
         if (Container3.current){observer3.observe(Container3.current)}
