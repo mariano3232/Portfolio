@@ -39,7 +39,7 @@ export default function getProjects(){
         {
             title:'TicTacToe',
             link:"https://tateti-rho.vercel.app/",
-            repo:"https://github.com/mariano3232/tateti",
+            repo:"https://github.com/mariano3232/tateti", 
             image:tateti,
             description:"tic-tac-toe is a small project built with reactJs with the main features of a classic game of tic-tac-toe with animations and victory counter"
         }
