@@ -53,6 +53,9 @@
         display:block;
         font-size: 100%;
     }
+    .circle{
+        display: none;
+    }
     .text{
         width: 100%;
     }
