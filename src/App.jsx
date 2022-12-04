@@ -2,12 +2,12 @@ import { useState,useRef,useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css'
 import NavBar from './components/NavBar.jsx'
-import Slider from './components/Carousel.jsx';
 import {Link} from 'react-scroll'
 import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
 import cv from './Resume.pdf'
+import Skills from './components/Skills';
 
 function App() {
 
@@ -89,7 +89,7 @@ function App() {
         <div className={isVisible?styles.secondbgVisible:styles.secondbg} id='#Skills'>
             <div className={isVisible?styles.secondVisible:styles.second}>
                 <div className={styles.queseyo}>
-                    <Slider className="Skills"/>
+                    <Skills/>
                 </div>
             </div>
         </div>
