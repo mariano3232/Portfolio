@@ -6,8 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export const ContactUs = () => {
+
   const form = useRef();
-  const notify = () => toast("Mail sent!");
+
   function handleSubmit(){
     toast.success('📧 Mail sent!!', {
       position:"bottom-right",
@@ -20,13 +21,11 @@ export const ContactUs = () => {
       theme:'dark',
       });
   }
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_7jgkrfn', 'template_68nfaj5', form.current, '-1rbYCzMa2EalLl4s')
       .then((result) => {
-          console.log(result.text);
+          console.log('result :',result);
       }, (error) => {
           console.log(error.text);
       });
@@ -38,20 +37,16 @@ export const ContactUs = () => {
       <h1 className={styles.h1}>Send me an E-mail :</h1>
       <a href="mailto:marianomelend@gmail.com" className={styles.mail}>marianomelend@gmail.com</a>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Name</label>
-        <input type="text" name="user_name" className={styles.input} />
+        <input type="text" name="user_name" placeholder='Name...' className={styles.input} />
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>E-mail</label>
-        <input type="email" name="user_email" className={styles.input} />
+        <input type="email" name="user_email" placeholder='e-mail...' className={styles.input} />
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Subject</label>
-        <input type="text" name="subject" className={styles.input}/>
+        <input type="text" name="subject" className={styles.input} placeholder='Subject...'/>
       </div>
       <div className={styles.inputContainer}>
-        <label className={styles.label}>Message</label>
-        <textarea name="message"  className={styles.text}/>
+        <textarea name="message"  className={styles.text} placeholder='message. . .'/>
       </div>
       <div className={styles.inputContainer}>
        <input type="submit" value="Send" onClick={()=>{handleSubmit()}} className={styles.submit}/>

@@ -12,8 +12,6 @@ export default function Projects(){
 
     let projects=getProjects();
 
-    console.log('projects :',projects)
-
     return(
         <div className={styles.background2}>
             <div className={styles.background}>
