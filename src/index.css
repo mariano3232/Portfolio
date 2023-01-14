@@ -4,7 +4,8 @@
   line-height: 24px;
   font-weight: 400;
   background: linear-gradient(150deg, #130f40 0%, #111124 74%);
-  /* overflow: hidden; */
+  overflow-x: hidden;
+  height: fit-content;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
