@@ -14,6 +14,7 @@ function App() {
     const [isVisible,setIsVisible]=useState(false)
     const [isProjectsVisible,setIsProjectsVisible]=useState(false)
     const [isFooterVisible,setIsFooterVisible]=useState(false)
+    const [introHidden,setIntroHidden]=useState(true)
     const myContainer = useRef(null);
     const Container2=useRef(null);
     const Container3=useRef(null)
@@ -65,17 +66,23 @@ function App() {
         if (Container3.current){observer3.observe(Container3.current)}
     },[])
 
+    useEffect(()=>{
+        setIntroHidden(false)
+    },[])
+
 
 
   return (
     <div className={styles.App}>   
     <NavBar/>
     <div className={styles.circle}></div>
-        <div id="#Intro" className={styles.first}>
+        <div id="#Intro" className={styles.intro}>
             <div className={styles.text}>
                 <h2>Mariano Melendez</h2>
                 <h1 className={styles.bla}>Full Stack Developer</h1>
-                <p>I am a self-taught developer with a passion for engineering and problem-solving. I have knowledge in several modern technologies and am looking for a position as a full stack, front-end or back-end developer.</p>
+                <p>Full Stack Web Developer with ability to solve problems and a drive to learn new technologies. Experience
+                in React, NodeJS, Express, SQL among others and the ability to quickly adapt to new methodologies and
+                tools. With creative thinking, adaptability to change, good teamwork and clear communication.</p>
                 <a target='_blank' href="https://certificates.soyhenry.com/cert?id=9b5f78a5-4b44-49d5-8a8d-fc1db4a46a4d">Full Stack certificate</a>
                 <div className={styles.buttons}>
                     <Link activeClass="active" to="#ContactForm" spy={false} smooth={true} offset={-50} duration={500}>
