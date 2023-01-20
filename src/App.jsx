@@ -6,7 +6,7 @@ import {Link} from 'react-scroll'
 import Projects from './components/Projects.jsx'
 import Footer from './components/Footer';
 import { ContactUs } from './components/ContactForm';
-import cv from './Resume.pdf'
+import cv from './Mariano_Melendez.pdf'
 import Skills from './components/Skills';
 
 function App() {
